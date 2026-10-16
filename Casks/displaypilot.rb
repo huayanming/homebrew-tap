@@ -2,16 +2,35 @@ cask "displaypilot" do
   version "5.0.2"
   sha256 "d88cc144cb25b57dce109a7ac4f2dd93b33856268449bc49b07d26c9ccd73bdf"
 
-  url "https://github.com/huayanming/displaypilot/releases/download/v#{version}/DisplayPilot-#{version}.dmg",
-      verified: "github.com/huayanming/displaypilot/"
+  url "https://github.com/huayanming/displaypilot/releases/download/v#{version}/DisplayPilot-#{version}.dmg"
   name "DisplayPilot"
-  desc "Display control, calibration and safe cleanup for macOS"
+  desc "Display control, calibration and safe cleanup"
   homepage "https://huayanming.github.io/displaypilot/"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
+  depends_on macos: :sonoma
+
   app "DisplayPilot.app"
+
+  uninstall quit: "com.neeson.displaypilot"
+
+  zap trash: [
+    "~/Library/Application Support/com.neeson.displaypilot",
+    "~/Library/Caches/com.neeson.displaypilot",
+    "~/Library/Preferences/com.neeson.displaypilot.plist",
+    "~/Library/Saved Application State/com.neeson.displaypilot.savedState",
+  ]
 
   caveats <<~EOS
     DisplayPilot is a paid app with a 14-day, fully featured trial.
     Purchase (one-time, no subscription): https://displaypilot-license.huayanming2019.workers.dev/buy
+
+    Note: the activation record lives in the login keychain, so `brew uninstall --zap`
+    removes the app's files but not that record. Remove it in Keychain Access if you
+    want a completely clean state.
   EOS
 end
