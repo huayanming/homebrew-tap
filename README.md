@@ -1,6 +1,6 @@
 # homebrew-tap
 
-Homebrew casks for [DisplayPilot](https://huayanming.github.io/displaypilot/) and anything else published here.
+Homebrew casks for [DisplayPilot](https://huayanming.github.io/displaypilot/?src=brew) and anything else published here.
 
 ## Install
 
