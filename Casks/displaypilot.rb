@@ -27,7 +27,7 @@ cask "displaypilot" do
 
   caveats <<~EOS
     DisplayPilot is a paid app with a 14-day, fully featured trial.
-    Purchase (one-time, no subscription): https://displaypilot-license.huayanming2019.workers.dev/buy
+    Purchase (one-time, no subscription): https://huayanming.github.io/displaypilot/?src=brew#buy
 
     Note: the activation record lives in the login keychain, so `brew uninstall --zap`
     removes the app's files but not that record. Remove it in Keychain Access if you
