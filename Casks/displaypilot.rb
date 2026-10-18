@@ -1,6 +1,6 @@
 cask "displaypilot" do
-  version "7.0.0"
-  sha256 "77380d67347f5212e8ca9901ba38522f85f289504495e9758b00e4c17ee398c6"
+  version "7.1.0"
+  sha256 "233fb6b3c4c11cd09f81950624774b4c99922c67685cbf30617e7578b01c7512"
 
   url "https://github.com/huayanming/displaypilot/releases/download/v#{version}/DisplayPilot-#{version}.dmg"
   name "DisplayPilot"
