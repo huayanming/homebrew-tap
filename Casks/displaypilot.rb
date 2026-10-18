@@ -1,10 +1,10 @@
 cask "displaypilot" do
-  version "7.1.7"
-  sha256 "2eefe85543606e1dac6bfcf835b96797b8173b087dacf54a9009029298d79a59"
+  version "8.0.0"
+  sha256 "2a2a07e1f513d17c8d3861d473f7bac63d61da996f5ae63cf8fa55189e3eb075"
 
   url "https://lumepane.com/dl/DisplayPilot-#{version}.dmg"
   name "LumePane"
-  desc "Display control, calibration and safe cleanup"
+  desc "Display control, calibration, safe cleanup and Glow Orb dock"
   homepage "https://lumepane.com/"
 
 
