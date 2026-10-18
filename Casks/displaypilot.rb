@@ -1,16 +1,12 @@
 cask "displaypilot" do
-  version "7.1.0"
-  sha256 "233fb6b3c4c11cd09f81950624774b4c99922c67685cbf30617e7578b01c7512"
+  version "7.1.1"
+  sha256 "eb958a456e31ac027520ae0765ca57441d2f009c4a3a6df926c4264b5ab733de"
 
-  url "https://github.com/huayanming/displaypilot/releases/download/v#{version}/DisplayPilot-#{version}.dmg"
-  name "DisplayPilot"
+  url "https://lumepane.com/dl/DisplayPilot-#{version}.dmg"
+  name "LumePane"
   desc "Display control, calibration and safe cleanup"
-  homepage "https://huayanming.github.io/displaypilot/"
+  homepage "https://lumepane.com/"
 
-  livecheck do
-    url :url
-    strategy :github_latest
-  end
 
   depends_on macos: :sonoma
 
@@ -26,8 +22,8 @@ cask "displaypilot" do
   ]
 
   caveats <<~EOS
-    DisplayPilot is a paid app with a 14-day, fully featured trial.
-    Purchase (one-time, no subscription): https://huayanming.github.io/displaypilot/?src=brew#buy
+    LumePane is a paid app with a 14-day, fully featured trial.
+    Purchase (one-time, no subscription): https://lumepane.com/checkout?src=brew
 
     Note: the activation record lives in the login keychain, so `brew uninstall --zap`
     removes the app's files but not that record. Remove it in Keychain Access if you
