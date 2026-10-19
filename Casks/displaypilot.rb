@@ -1,6 +1,6 @@
 cask "displaypilot" do
-  version "8.0.1"
-  sha256 "ba7bae6bf5a9887e34315e39a5318f5f608c2e84537423df20270bd8b3eb6a17"
+  version "8.0.2"
+  sha256 "c61cae8afae5d81883bd0a968c765e2df15d27716e4f31d3c235650acd57a791"
 
   url "https://lumepane.com/dl/DisplayPilot-#{version}.dmg"
   name "LumePane"
