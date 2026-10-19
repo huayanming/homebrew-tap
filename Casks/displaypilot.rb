@@ -1,8 +1,8 @@
 cask "displaypilot" do
-  version "8.0.11"
-  sha256 "ca5a9a037d5745c84315fc08558323862bcb735badf3321ce5836c34a223f4d1"
+  version "8.0.12"
+  sha256 "8c519e0354de596fd39da2fb7b78cfe9deeddffaa86cfab661d36f294723ccaf"
 
-  url "https://lumepane.com/dl/DisplayPilot-#{version}.dmg"
+  url "https://lumepane.com/dl/LumePane-#{version}.dmg"
   name "LumePane"
   desc "Display control, calibration, safe cleanup and Glow Orb dock"
   homepage "https://lumepane.com/"
@@ -10,7 +10,7 @@ cask "displaypilot" do
 
   depends_on macos: :sonoma
 
-  app "DisplayPilot.app"
+  app "LumePane.app"
 
   uninstall quit: "com.neeson.displaypilot"
 
