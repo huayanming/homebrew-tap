@@ -1,6 +1,6 @@
 cask "lumepane" do
-  version "8.0.17"
-  sha256 "c2c89f705f22f643120d24f533784edf832a7e6e615c2d8c57f2f54d3d07f6de"
+  version "9.0.0"
+  sha256 "baf938f8ea9a2778c8d3e8c806e9df4909d05962b9e324e5fa18a56d12cca15e"
 
   url "https://lumepane.com/dl/LumePane-#{version}.dmg"
   name "LumePane"
@@ -12,13 +12,13 @@ cask "lumepane" do
 
   app "LumePane.app"
 
-  uninstall quit: "com.neeson.displaypilot"
+  uninstall quit: "com.neeson.lumepane"
 
   zap trash: [
-    "~/Library/Application Support/com.neeson.displaypilot",
-    "~/Library/Caches/com.neeson.displaypilot",
-    "~/Library/Preferences/com.neeson.displaypilot.plist",
-    "~/Library/Saved Application State/com.neeson.displaypilot.savedState",
+    "~/Library/Application Support/com.neeson.lumepane",
+    "~/Library/Caches/com.neeson.lumepane",
+    "~/Library/Preferences/com.neeson.lumepane.plist",
+    "~/Library/Saved Application State/com.neeson.lumepane.savedState",
   ]
 
   caveats <<~EOS
