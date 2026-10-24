@@ -1,6 +1,6 @@
 cask "lumepane" do
-  version "9.1.9"
-  sha256 "ca446bbebf12b2a3f92956832dd378abe7a4a3c6c3009b7db948f26d497a8e44"
+  version "9.1.10"
+  sha256 "92da63385f8e05c9a61b8682b9a3d0fea5dcae1986a4191dd7777e36c4bb8dc6"
 
   url "https://lumepane.com/dl/LumePane-#{version}.dmg"
   name "LumePane"
